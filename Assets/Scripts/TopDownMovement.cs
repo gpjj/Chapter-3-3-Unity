@@ -34,7 +34,7 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector3 direction)
     {
-        direction = direction * 5;
+        direction = transform.rotation * direction * 5;
         rb.velocity = direction;
     }
 }
